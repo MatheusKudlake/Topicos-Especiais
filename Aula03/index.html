@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            //Dados primitivos
+            //String/undefined
+
+            let fruta
+            console.log(fruta)
+            console.log("Tipo da fruta: " + typeof fruta)
+            fruta="melancia"
+            console.log(fruta)
+            console.log("Tipo da fruta: " + typeof fruta )
+
+            //Number
+            let salarioWesley = 4564.654
+            console.log("Salario do Wesley: " + salarioWesley)
+            console.log("Tipo do salario: " + typeof salarioWesley)
+
+            let idadeWesley = 26
+            console.log("Idade do Wesley: " + idadeWesley)
+            console.log("Tipo da idade: " + typeof idadeWesley)
+
+            //Boolean
+            let isAdmin = true
+            console.log("É admin? " + isAdmin)
+            console.log("Tipo da variável: " + typeof isAdmin)
+
+            //Symbol
+            let id = Symbol("id1")
+            console.log("ID: " , id)
+            console.log("Tipo do ID: " + typeof id)
+
+            //null
+            let carro = null
+            console.log("Carro: " + carro)
+            console.log("Tipo de carro: " + typeof carro) //Resulta em object, porque object é o tipo mais genérico do JavaScript
+
+            //BigInt
+            let numerasso = 44444444444444444444444444444444444n
+            console.log("Numero: " + numerasso)
+            console.log("Tipo do numero: " + typeof numerasso)
+
+            //Dados não primitivos
+            //Object
+            let pessoa = {nome: "Matheus", idade: 20}
+            console.log(pessoa)
+            console.log("Tipo de pessoa: " + typeof pessoa)
+            console.log("Idade: " + pessoa.idade)
+
+            //Teste
+            /*class pessoa{
+                constructor(nome, idade){
+                    this.nome = nome
+                    this.idade = idade
+            }}
+            let matheus = new pessoa("Matheus", 20)
+
+            console.log(matheus)
+            console.log("Tipo de pessoa: " + typeof matheus)*/
+
+            //Array
+            let array1 = ["a", "b", "c"]
+            let array2 = ["d", "e", "f", array1]
+            console.log(array1)
+            console.log(array2)
+            console.log(array2[0])
+            console.log(array2[3][0])
+
+        </script>
+        <style>
+            body{
+                background-color: grey;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Aula 03
+        </h1>
+    </body>
+</html>
